@@ -3,7 +3,7 @@
     <input type="text" placeholder="Recherche" v-model="search">
     <ul v-if="filteredPosts && filteredPosts.length">
       <li v-for="post in filteredPosts" :key="post.id">
-        <p><strong>{{post.title}}</strong></p>
+        <router-link :to="{ name: 'trip-detail', params: { id: post.id }}"><strong>{{post.title}}</strong></router-link>
         <p>{{post.body}}</p>
       </li>
     </ul>
