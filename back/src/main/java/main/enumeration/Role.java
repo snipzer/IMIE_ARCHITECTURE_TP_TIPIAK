@@ -14,7 +14,7 @@ public enum Role {
         return id;
     }
 
-    public Role getRoleById(Long id) {
+    public static Role getRoleById(Long id) {
         for(Role role : Role.values()) {
             if(role.id.equals(id)) {
                 return role;

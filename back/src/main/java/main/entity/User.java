@@ -1,5 +1,7 @@
 package main.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -54,6 +56,7 @@ public class User {
         this.email = email;
     }
 
+    @JsonIgnore
     @Column(name = "password")
     public String getPassword() {
         return password;
