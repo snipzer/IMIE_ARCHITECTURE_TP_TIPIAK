@@ -26,7 +26,13 @@ public class UserController {
 
     @PostMapping("/register")
     public ResponseEntity<User> createUser(@ModelAttribute User user) {
+        // TODO Encrypter le mot de passe
         return new ResponseEntity<>(this.userService.save(user), HttpStatus.OK);
+    }
+
+    @PostMapping("/login")
+    public void login() {
+        // TODO Créer le login dans toutes les couches
     }
 
     @PostMapping("/user")
