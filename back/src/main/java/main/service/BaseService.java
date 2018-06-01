@@ -14,7 +14,7 @@ public class BaseService<T extends CrudRepository<C, Long>, C> {
     }
 
     public List<C> findAll() {
-        return (List<C>)this.dao.findAll();
+        return (List<C>) this.dao.findAll();
     }
 
     public Optional<C> findById(Long id) {
@@ -26,7 +26,7 @@ public class BaseService<T extends CrudRepository<C, Long>, C> {
     }
 
     public List<C> updateEntities(List<C> entity) {
-        return (List<C>)this.dao.saveAll(entity);
+        return (List<C>) this.dao.saveAll(entity);
     }
 
     public void deleteById(Long id) {
@@ -42,7 +42,7 @@ public class BaseService<T extends CrudRepository<C, Long>, C> {
     }
 
     public List<C> saveAll(List<C> cs) {
-        return (List<C>)this.dao.saveAll(cs);
+        return (List<C>) this.dao.saveAll(cs);
     }
 
     public T getDao() {
