@@ -1,7 +1,7 @@
 package main.dto;
 
 import main.entity.User;
-import main.exception.EntityNotFoundException;
+import main.core.exception.EntityNotFoundException;
 import main.util.ErrorUtil;
 
 import java.io.Serializable;
