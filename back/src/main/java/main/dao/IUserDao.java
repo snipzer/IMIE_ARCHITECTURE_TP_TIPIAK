@@ -5,7 +5,8 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface UserDao extends CrudRepository<User, Long> {
 
-    List<User> findByLastName(String lastName);
+public interface IUserDao extends CrudRepository<User, Long> {
+
+    List<User> findByLastname(String lastname);
 }
