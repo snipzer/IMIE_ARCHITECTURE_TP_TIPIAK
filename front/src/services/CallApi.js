@@ -12,4 +12,18 @@ export default class CallApi {
         })
     })
   }
+
+  static post (url, data) {
+    // return new Promise((resolve, reject) => {
+    //   axios.post(url, data)
+    //     .then(response => {
+    //       resolve(response)
+    //     })
+    //     .catch(e => {
+    //       reject(e)
+    //     })
+    // })
+    console.log('url', url)
+    console.log('data', data)
+  }
 }

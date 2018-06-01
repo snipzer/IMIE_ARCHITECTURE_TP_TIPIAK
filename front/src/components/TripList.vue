@@ -21,9 +21,6 @@ import callApi from '@/services/CallApi'
 
 export default {
   name: 'TripList',
-  props: {
-    msg: String
-  },
   data: function () {
     return {
       search: '',

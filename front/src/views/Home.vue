@@ -1,5 +1,5 @@
 <template>
-  <tripList></tripList>
+    <tripList></tripList>
 </template>
 
 <script>
